@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <!-- Mouse Parallax Layer -->
+  <div class="mouse-parallax" data-speed="10">
+    <img src="bg-layer.png" alt="background layer" />
+  </div>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
       <h1 class="logo">Mock Tank</h1>
@@ -20,20 +26,30 @@
     </div>
   </nav>
 
-  <header class="hero" id="home">
-    <h1 id="typewriter"></h1>
-    <p>Outshoot, Outsmart, Outlast</p>
-    <a href="#register" class="btn-primary">Register Now</a>
+  <!-- Hero -->
+  <header class="hero parallax-section" id="home">
+    <div class="hero-content">
+      <h1 id="typewriter"></h1>
+      <p>Outshoot, Outsmart, Outlast</p>
+      <a href="#register" class="btn-primary">Register Now</a>
+    </div>
   </header>
 
-  <section id="about" class="section-light fade-in">
+  <!-- About -->
+  <section id="about" class="section-light reveal">
     <div class="container">
       <h2>About the Competition</h2>
       <p>This event tests strategic thinking and collaborative innovation in a simulated tank battlefield.</p>
     </div>
   </section>
 
-  <section id="team" class="section-dark fade-in">
+  <!-- Parallax Section -->
+  <section class="parallax-section" style="background-image: url('bg1.jpg');">
+    <div class="parallax-content"><h2>Our Mission</h2></div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section-dark reveal">
     <div class="container">
       <h2>Meet the Team</h2>
       <div class="team-grid">
@@ -42,12 +58,13 @@
           <h3>Jane Doe</h3>
           <p>Coordinator</p>
         </div>
-        <!-- Add more team members here -->
+        <!-- Repeat as needed -->
       </div>
     </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer id="contact">
     <p>&copy; 2025 Mock Tank Competition</p>
     <p><a href="mailto:info@example.com">info@example.com</a> | <a href="#">Instagram</a></p>
   </footer>
